@@ -18,7 +18,7 @@ How to package & run:
 -----------------------
 
 ``mvn package``
-- java -jar <home-folder>/target/chess-game-1.0.0-SNAPSHOT.jar
+- java -jar <home-folder>/target/tictactoe-1.0.0-SNAPSHOT.jar
 
 
 How to test:
