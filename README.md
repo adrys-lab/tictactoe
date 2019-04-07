@@ -2,8 +2,8 @@
 
 Dependencies:
 -----------------------
-Maven 3
-Java 8
+- Maven 3
+- Java 8
 
 
 Description:
