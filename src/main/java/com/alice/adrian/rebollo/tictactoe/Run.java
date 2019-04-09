@@ -14,18 +14,16 @@ public class Run {
 
     public static void main(String[] args) {
 
+        System.out.println("Welcome to Adrian tictactoe Game !! ");
+        
         final BoardController boardController = ControllerProvider.buildBoardControllerInstance();
         final Strategy strategy = new AlphaBetaPrunning();
         final MouseEventHandler mouseEventHandler = new MouseEventHandler(boardController, strategy);
         final BoardPanel boardPanel = new BoardPanel(boardController, mouseEventHandler);
 
-        if (args.length == 1) {
-            System.out.println("Game Mode: Player vs. Player");
-            SwingUtilities.invokeLater(() -> new BoardWrapper(boardPanel));
-        } else {
-            System.out.println("Game Mode: Player vs. Console");
-            SwingUtilities.invokeLater(() -> new BoardWrapper(boardPanel));
-        }
-
+        System.out.println("Game Mode: Player vs. Console");
+        
+        SwingUtilities.invokeLater(() -> new BoardWrapper(boardPanel));
+       
     }
 }
