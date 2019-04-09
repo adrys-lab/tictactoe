@@ -23,7 +23,7 @@ public class Move {
         return yPos;
     }
 
-    public Move cloneInstance() {
+    Move cloneInstance() {
         return new Move(xPos, yPos);
     }
 
